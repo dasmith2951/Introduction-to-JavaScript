@@ -177,9 +177,64 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let user = prompt("Choose rock, paper, or scissors.");
 
-//function game(user, computer){
-    /*add your code here*/
+let computer = Math.random();
+
+if (computer <= 0.34) {
+	computer = "rock";
+} 
+
+else if(computer <= 0.67) {
+	computer = "paper";
+} 
+
+else {
+	computer = "scissors";
+}
+
+function game(user, computer) {
+
+  if(user===computer) {
+    return "The result is a tie!";
+  }
+  
+  else if(user==="rock") {
+  
+    if(computer==="scissors") {
+      return "you win!"
+    }
+  
+    else if(computer==="paper") {
+      return "you lose!";
+    }
+  }
+  
+  else if(user==="paper") {
+  
+    if(computer==="scissors") {
+      return "you lose!"
+    }
+  
+  else if(computer==="rock") {
+    return "you win!";
+    }
+  }
+  
+  else if(user==="scissors") {
+  
+    if(computer==="paper") {
+      return "you win!"
+    }
+  
+    else if(computer==="rock") {
+      return "you lose!";
+    }
+  }
+    
+}
+  
+console.log(game(user,computer));
 
   
   
