@@ -19,6 +19,13 @@ Do the following:
 */
 
 
+const votingAge = prompt("How old are you?");
+
+if (votingAge >= 18) {
+  console.log("Yes! You can vote.");
+} else {
+  console.log("Not quite there yet.");
+}
 
 /*
 Task 1b - Values
@@ -31,7 +38,15 @@ Do the following:
    HINT: no function required
 */
 
-
+let hour = (Math.random()*24);
+ 
+if (hour <= 10) {
+ console.log("Good Morning");
+} else if (hour <= 18) {
+ console.log("Good Afternoon");
+} else {
+ console.log("Good Evening");
+}
 
 
 
@@ -46,8 +61,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+let x = "1999";
+console.log(Number(x));
 
 /*
 Task 1d - Multiply
@@ -57,11 +72,16 @@ Do the following:
    2. Receive the numbers in the parameters: a and b
    3. Multiply a and b and return the answer
 */
+let a = Math.round(Math.random()*10);
 
-function multiply(/*add your code here*/){
+let b = Math.round(Math.random()*10);
+
+function multiply(a,b){
+
     /*add your code here*/
+    return a * b;
   }
-
+  console.log(a * b);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,11 +94,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+  return age*7;
 }
-
-
+console.log(dogYears(30));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -134,9 +153,9 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
+//function game(user, computer){
     /*add your code here*/
-}
+
   
   
 
@@ -147,7 +166,7 @@ function game(user, computer){
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kilometers received to miles
   3. Return the number of miles
 */
 
@@ -220,26 +239,25 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
+//function vowelCounter(/*add your code here*/) {
     /*add your code here*/
-}
 
 
 
-/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-function foo(){
-    //console.log('its working');
-    return 'bar';
-}
-/*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-export default{
-    foo,
-    multiply,
-    dogYears,
-    hungryDog,
-    game,
-    miles,
-    feet,
-    annoyingSong,
-    grade
-}
+
+// /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
+// function foo(){
+//     //console.log('its working');
+//     return 'bar';
+// }
+// /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
+// export default{
+//     foo,
+//     multiply,
+//     dogYears,
+//     hungryDog,
+//     game,
+//     miles,
+//     feet,
+//     annoyingSong,
+//     grade}
