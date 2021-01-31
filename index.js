@@ -323,10 +323,41 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
-function grade(/*Your Code here */){
-  /*Your Code here */
+let letterGrade = ['A', 'B', 'C', 'D', 'F'];
+
+function grade() {
+
+let promptGrade = prompt('What did you make on the module?');
+
+gradeScale (letterGrade, promptGrade);
+
+}
+
+function gradeScale (letterGrade, promptGrade) {
+
+  if (promptGrade>= 90) {
+    alert("you got an " + letterGrade[0] + ", way to go!");
+  } 
+        
+  else if (promptGrade>= 80) {
+    alert("you got a " + letterGrade[1] + ", great job!");
+  } 
+        
+  else if (promptGrade>= 70) {
+    alert("you got a " + letterGrade[2] + ", nice job; just review some concepts.");
+  } 
+        
+  else if (promptGrade>= 60) {
+    alert("you got a " + letterGrade[3] + ", better study hard before Sprint!");
+  } 
+        
+  else {
+    alert("you got an " + letterGrade[4] + ", well you did your best; time to flex.");
   }
+
+}
+
+console.log(grade());
   
   
 
